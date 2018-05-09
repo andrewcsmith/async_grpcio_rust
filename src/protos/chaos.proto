@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service Chaos {
+    rpc SpreadChaos (ChaosRequest) returns (ChaosResponse) {}
+}
+
+message ChaosRequest {
+    string whatever = 1;
+}
+
+message ChaosResponse {
+    uint64 id = 1;
+}

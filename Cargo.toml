@@ -1,0 +1,18 @@
+[package]
+name = "chaos-droid"
+version = "0.1.0"
+authors = ["Andrew C. Smith <andrewchristophersmith@gmail.com>"]
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[dependencies]
+futures = "0.1"
+grpcio = "*"
+protobuf = "*"
+rand = "0.4.2"
